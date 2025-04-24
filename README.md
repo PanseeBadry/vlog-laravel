@@ -18,6 +18,8 @@
 A simple blog-style web application built with **Laravel**. Users can register, login, and manage personal blog posts. This project uses **Laravel Breeze** for authentication and **Bootstrap 5** for a modern, clean UI inspired by platforms like Twitter and Facebook.
 
 ---
+## Demo Link 
+https://drive.google.com/file/d/1p-aw6p3FhbjqKSleX5KJy-wtYLsVDUxL/view?usp=drive_link
 
 ## 🔧 Features
 
