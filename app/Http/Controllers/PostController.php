@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +19,7 @@ class PostController extends Controller
     {
         return view("posts.create");
     }
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
         $post = Post::create([
             'user_id' => Auth::id(),
@@ -42,7 +43,7 @@ class PostController extends Controller
         }
         return view("posts.edit",["post"=>$post]);
     }
-    public function update(Request $request, $id) 
+    public function update(StorePostRequest $request, $id) 
     {
         $post = Post::find($id);
         if($post->user_id != Auth::id()){
